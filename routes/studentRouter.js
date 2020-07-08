@@ -229,6 +229,21 @@ app.get('/accounts', async (req, res) => {
   }
 });
 
+// PUT GIT
+app.put('/put/:id', async (req, res) => {
+  try {
+    const student = await studentModel.findOneAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true }
+    );
+
+    res.send(student);
+  } catch (error) {
+    res.status(500).send(error);
+  }
+});
+
 // app.post('/student', async (req, res) => {
 //   try {
 //     const student = new studentModel(req.body);
