@@ -1,5 +1,6 @@
 // TRABALHO PRÁTICO - projeto base
 
+// Imports
 import express from 'express';
 import mongoose from 'mongoose';
 import studentRouter from './routes/studentRouter.js';
