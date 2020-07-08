@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 
+// Esqueleto do Banco de dados
 const studentSchema = mongoose.Schema({
   agencia: { type: Number, required: true },
   conta: { type: Number, required: true },
