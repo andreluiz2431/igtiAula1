@@ -8,6 +8,7 @@ const studentSchema = mongoose.Schema({
   balance: { type: Number, required: true },
 });
 
+// salvando modelo da coleção
 const studentMondel = mongoose.model('account', studentSchema, 'account');
 
 export default studentMondel;
